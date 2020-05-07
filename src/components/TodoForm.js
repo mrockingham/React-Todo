@@ -27,12 +27,15 @@ submitForm = (e) =>{
 
 render(){
     return(
+        <div className='Form'>
         <form onSubmit={this.submitForm}>
-            <input
+            <input 
+            className='Add-line'
                  onChange ={this.handleChanges}   
                  type='text' name='task' value ={this.state.keyword} />
-            <button>Add</button>
+            <button className='Add'>Add</button>
         </form>
+        </div>
     )
 }
 }

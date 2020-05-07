@@ -1,19 +1,79 @@
 body{
+    background-color: #3da35d;
 
-    
-    
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
 }
 
+.App{
+      background-color: beige;
+      border-style: solid;
+      border-width: thick;
+      border-color: #0F4C5C;
+      box-shadow: 3rem;
+      border-radius: 10px;
+      margin: auto;
+      margin-top: 10%;
+      max-width: 60%;
+}
+
+.header-title{
+    
+    
+     text-align: center;
+}
+
+.Todo-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+        
+        
+}
 .todo {
-    background-color: #e64944;
+    background-color: #e36414;
+    border-color: #0F4C5C;
+    border-style: solid;
+    border-width: medium;
     width: 45%;
     text-align: left;
-    margin: 4px 0;
-    padding-left: 8px;
+    margin: 1%;
+    padding: .5%;
     cursor: pointer;
+    color: white;
+    font-size: 1.2rem;
+    
   }
 
   .todocompleted {
     background-color: #d17d7c;
     text-decoration: line-through;
   }
+  .Form{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2%;
+     
+  }
+
+.Add{
+    background-color:#e36414 ;
+   
+}
+.Add-line{
+    background-color:#0F4C5C ;
+    border-color: #e36414;
+    
+}
+
+.clear-list{
+background-color:#e36414 ;
+ }
+ button{
+     border-color: #e36414;
+     color: white;
+ }

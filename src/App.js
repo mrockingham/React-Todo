@@ -1,7 +1,9 @@
 import React from 'react';
 
+
 import TodoList from './components/TodoList'
 import TodoForm from './components/TodoForm'
+import Header from './Header'
 
 
 const getDone = [
@@ -17,6 +19,17 @@ completed: false
 }
 ]
 
+// fetch("https://type.fit/api/quotes")
+//   .then(function(response) {
+//     return response.json();
+//   })
+//   .then(function(theQuotes) {
+//     console.log(theQuotes);
+//   });
+
+
+  
+
 class App extends React.Component {
   // you will need a place to store your state in this component.
   // design `App` to be the parent component of your application.
@@ -29,6 +42,9 @@ class App extends React.Component {
     }
     // this.addTodo = this.addTodo.bind(this)
   }
+
+
+  
 
   addTodo = (todoTask) => {
   
@@ -69,18 +85,23 @@ this.setState({
 }
   render() {
     return (
-      <div>
-        <h2>Welcome to your Todo App!</h2>
-        
-        <TodoForm addTodo ={this.addTodo} />
-        
+      <div className='App'>
+        <header>
+           <Header />
+          
+          <TodoForm addTodo ={this.addTodo} />
+        </header>
+         
         <TodoList
          getDone ={this.state.getDone} 
          toggleItem={this.toggleItem}
          removeTodo ={this.removeTodo} />
+         
       </div>
     );
   }
 }
+
+
 
 export default App;
